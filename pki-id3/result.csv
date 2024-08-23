@@ -1,0 +1,1095 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<DecisionTree>
+    <Node attribute="GenHlth">
+        <IF value="GenHlth,0">
+            <Node attribute="GenHlth-0">
+                <IF value="HighBP,0">
+                    <Node attribute="HighBP-0">
+                        <IF value="Age,1">
+                            <LeafNode class="0"/>
+                        </IF>
+                        <IF value="Age,2">
+                            <LeafNode class="0"/>
+                        </IF>
+                        <IF value="Age,3">
+                            <Node attribute="Age-3">
+                                <IF value="Income,3">
+                                    <LeafNode class="0"/>
+                                </IF>
+                                <IF value="Income,1">
+                                    <Node attribute="Income-1">
+                                        <IF value="MentHlth,0">
+                                            <Node attribute="MentHlth-0">
+                                                <IF value="PhysHlth,3">
+                                                    <LeafNode class="1"/>
+                                                </IF>
+                                                <IF value="PhysHlth,0">
+                                                    <LeafNode class="0"/>
+                                                </IF>
+                                                <IF value="PhysHlth,1">
+                                                    <LeafNode class="0"/>
+                                                </IF>
+                                            </Node>
+                                        </IF>
+                                        <IF value="MentHlth,1">
+                                            <LeafNode class="0"/>
+                                        </IF>
+                                        <IF value="MentHlth,3">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                                <IF value="Income,2">
+                                    <LeafNode class="0"/>
+                                </IF>
+                                <IF value="Income,0">
+                                    <Node attribute="Income-0">
+                                        <IF value="Education,1">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                        <IF value="Education,0">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                        <IF value="Education,3">
+                                            <LeafNode class="0"/>
+                                        </IF>
+                                        <IF value="Education,2">
+                                            <LeafNode class="0"/>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                            </Node>
+                        </IF>
+                        <IF value="Age,0">
+                            <LeafNode class="0"/>
+                        </IF>
+                    </Node>
+                </IF>
+                <IF value="HighBP,1">
+                    <Node attribute="HighBP-1">
+                        <IF value="HighChol,0">
+                            <Node attribute="HighChol-0">
+                                <IF value="HeartDiseaseorAttack,1">
+                                    <LeafNode class="1"/>
+                                </IF>
+                                <IF value="HeartDiseaseorAttack,0">
+                                    <Node attribute="HeartDiseaseorAttack-0">
+                                        <IF value="HvyAlcoholConsump,1">
+                                            <LeafNode class="0"/>
+                                        </IF>
+                                        <IF value="HvyAlcoholConsump,0">
+                                            <Node attribute="HvyAlcoholConsump-0">
+                                                <IF value="DiffWalk,0">
+                                                    <Node attribute="DiffWalk-0">
+                                                        <IF value="Education,1">
+                                                            <LeafNode class="0"/>
+                                                        </IF>
+                                                        <IF value="Education,0">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                        <IF value="Education,3">
+                                                            <LeafNode class="0"/>
+                                                        </IF>
+                                                        <IF value="Education,2">
+                                                            <Node attribute="Education-2">
+                                                                <IF value="Veggies,0">
+                                                                    <Node attribute="Veggies-0">
+                                                                        <IF value="Sex,1">
+                                                                            <Node attribute="Sex-1">
+                                                                                <IF value="MentHlth,0">
+                                                                                    <Node attribute="MentHlth-0">
+                                                                                        <IF value="Smoker,0">
+                                                                                            <LeafNode class="0"/>
+                                                                                        </IF>
+                                                                                        <IF value="Smoker,1">
+                                                                                            <LeafNode class="1"/>
+                                                                                        </IF>
+                                                                                    </Node>
+                                                                                </IF>
+                                                                                <IF value="MentHlth,1">
+                                                                                    <LeafNode class="0"/>
+                                                                                </IF>
+                                                                            </Node>
+                                                                        </IF>
+                                                                        <IF value="Sex,0">
+                                                                            <LeafNode class="0"/>
+                                                                        </IF>
+                                                                    </Node>
+                                                                </IF>
+                                                                <IF value="Veggies,1">
+                                                                    <LeafNode class="0"/>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                                <IF value="DiffWalk,1">
+                                                    <Node attribute="DiffWalk-1">
+                                                        <IF value="MentHlth,0">
+                                                            <Node attribute="MentHlth-0">
+                                                                <IF value="PhysHlth,2">
+                                                                    <LeafNode class="0"/>
+                                                                </IF>
+                                                                <IF value="PhysHlth,3">
+                                                                    <LeafNode class="0"/>
+                                                                </IF>
+                                                                <IF value="PhysHlth,0">
+                                                                    <Node attribute="PhysHlth-0">
+                                                                        <IF value="Stroke,1">
+                                                                            <LeafNode class="1"/>
+                                                                        </IF>
+                                                                        <IF value="Stroke,0">
+                                                                            <Node attribute="Stroke-0">
+                                                                                <IF value="Smoker,0">
+                                                                                    <Node attribute="Smoker-0">
+                                                                                        <IF value="Veggies,0">
+                                                                                            <LeafNode class="1"/>
+                                                                                        </IF>
+                                                                                        <IF value="Veggies,1">
+                                                                                            <LeafNode class="0"/>
+                                                                                        </IF>
+                                                                                    </Node>
+                                                                                </IF>
+                                                                                <IF value="Smoker,1">
+                                                                                    <LeafNode class="1"/>
+                                                                                </IF>
+                                                                            </Node>
+                                                                        </IF>
+                                                                    </Node>
+                                                                </IF>
+                                                                <IF value="PhysHlth,1">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                        <IF value="MentHlth,1">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                        <IF value="MentHlth,2">
+                                                            <LeafNode class="0"/>
+                                                        </IF>
+                                                        <IF value="MentHlth,3">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                            </Node>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                            </Node>
+                        </IF>
+                        <IF value="HighChol,1">
+                            <Node attribute="HighChol-1">
+                                <IF value="PhysActivity,1">
+                                    <Node attribute="PhysActivity-1">
+                                        <IF value="BMI,0">
+                                            <Node attribute="BMI-0">
+                                                <IF value="MentHlth,0">
+                                                    <Node attribute="MentHlth-0">
+                                                        <IF value="Income,3">
+                                                            <Node attribute="Income-3">
+                                                                <IF value="Fruits,1">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                                <IF value="Fruits,0">
+                                                                    <LeafNode class="0"/>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                        <IF value="Income,1">
+                                                            <Node attribute="Income-1">
+                                                                <IF value="CholCheck,1">
+                                                                    <Node attribute="CholCheck-1">
+                                                                        <IF value="Fruits,1">
+                                                                            <LeafNode class="1"/>
+                                                                        </IF>
+                                                                        <IF value="Fruits,0">
+                                                                            <LeafNode class="0"/>
+                                                                        </IF>
+                                                                    </Node>
+                                                                </IF>
+                                                                <IF value="CholCheck,0">
+                                                                    <LeafNode class="0"/>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                        <IF value="Income,2">
+                                                            <LeafNode class="0"/>
+                                                        </IF>
+                                                        <IF value="Income,0">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                                <IF value="MentHlth,1">
+                                                    <Node attribute="MentHlth-1">
+                                                        <IF value="Veggies,0">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                        <IF value="Veggies,1">
+                                                            <Node attribute="Veggies-1">
+                                                                <IF value="AnyHealthcare,0">
+                                                                    <LeafNode class="0"/>
+                                                                </IF>
+                                                                <IF value="AnyHealthcare,1">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                                <IF value="MentHlth,2">
+                                                    <LeafNode class="0"/>
+                                                </IF>
+                                                <IF value="MentHlth,3">
+                                                    <LeafNode class="0"/>
+                                                </IF>
+                                            </Node>
+                                        </IF>
+                                        <IF value="BMI,1">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                                <IF value="PhysActivity,0">
+                                    <LeafNode class="1"/>
+                                </IF>
+                            </Node>
+                        </IF>
+                    </Node>
+                </IF>
+            </Node>
+        </IF>
+        <IF value="GenHlth,1">
+            <Node attribute="GenHlth-1">
+                <IF value="Age,1">
+                    <Node attribute="Age-1">
+                        <IF value="HighChol,0">
+                            <LeafNode class="0"/>
+                        </IF>
+                        <IF value="HighChol,1">
+                            <Node attribute="HighChol-1">
+                                <IF value="Income,3">
+                                    <Node attribute="Income-3">
+                                        <IF value="NoDocbcCost,0">
+                                            <Node attribute="NoDocbcCost-0">
+                                                <IF value="DiffWalk,0">
+                                                    <Node attribute="DiffWalk-0">
+                                                        <IF value="Sex,1">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                        <IF value="Sex,0">
+                                                            <Node attribute="Sex-0">
+                                                                <IF value="Veggies,0">
+                                                                    <LeafNode class="0"/>
+                                                                </IF>
+                                                                <IF value="Veggies,1">
+                                                                    <Node attribute="Veggies-1">
+                                                                        <IF value="Education,1">
+                                                                            <LeafNode class="1"/>
+                                                                        </IF>
+                                                                        <IF value="Education,3">
+                                                                            <LeafNode class="0"/>
+                                                                        </IF>
+                                                                        <IF value="Education,2">
+                                                                            <LeafNode class="1"/>
+                                                                        </IF>
+                                                                    </Node>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                                <IF value="DiffWalk,1">
+                                                    <LeafNode class="1"/>
+                                                </IF>
+                                            </Node>
+                                        </IF>
+                                        <IF value="NoDocbcCost,1">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                                <IF value="Income,1">
+                                    <Node attribute="Income-1">
+                                        <IF value="Education,1">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                        <IF value="Education,0">
+                                            <LeafNode class="0"/>
+                                        </IF>
+                                        <IF value="Education,3">
+                                            <Node attribute="Education-3">
+                                                <IF value="Veggies,0">
+                                                    <LeafNode class="1"/>
+                                                </IF>
+                                                <IF value="Veggies,1">
+                                                    <Node attribute="Veggies-1">
+                                                        <IF value="NoDocbcCost,0">
+                                                            <Node attribute="NoDocbcCost-0">
+                                                                <IF value="Fruits,1">
+                                                                    <Node attribute="Fruits-1">
+                                                                        <IF value="PhysActivity,1">
+                                                                            <LeafNode class="0"/>
+                                                                        </IF>
+                                                                        <IF value="PhysActivity,0">
+                                                                            <LeafNode class="1"/>
+                                                                        </IF>
+                                                                    </Node>
+                                                                </IF>
+                                                                <IF value="Fruits,0">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                        <IF value="NoDocbcCost,1">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                            </Node>
+                                        </IF>
+                                        <IF value="Education,2">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                                <IF value="Income,2">
+                                    <LeafNode class="1"/>
+                                </IF>
+                                <IF value="Income,0">
+                                    <Node attribute="Income-0">
+                                        <IF value="PhysHlth,2">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                        <IF value="PhysHlth,3">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                        <IF value="PhysHlth,0">
+                                            <Node attribute="PhysHlth-0">
+                                                <IF value="Education,1">
+                                                    <LeafNode class="0"/>
+                                                </IF>
+                                                <IF value="Education,3">
+                                                    <LeafNode class="1"/>
+                                                </IF>
+                                                <IF value="Education,2">
+                                                    <Node attribute="Education-2">
+                                                        <IF value="Fruits,1">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                        <IF value="Fruits,0">
+                                                            <Node attribute="Fruits-0">
+                                                                <IF value="NoDocbcCost,0">
+                                                                    <Node attribute="NoDocbcCost-0">
+                                                                        <IF value="PhysActivity,1">
+                                                                            <LeafNode class="1"/>
+                                                                        </IF>
+                                                                        <IF value="PhysActivity,0">
+                                                                            <LeafNode class="0"/>
+                                                                        </IF>
+                                                                    </Node>
+                                                                </IF>
+                                                                <IF value="NoDocbcCost,1">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                            </Node>
+                                        </IF>
+                                        <IF value="PhysHlth,1">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                            </Node>
+                        </IF>
+                    </Node>
+                </IF>
+                <IF value="Age,2">
+                    <Node attribute="Age-2">
+                        <IF value="BMI,2">
+                            <LeafNode class="1"/>
+                        </IF>
+                        <IF value="BMI,0">
+                            <Node attribute="BMI-0">
+                                <IF value="HvyAlcoholConsump,1">
+                                    <Node attribute="HvyAlcoholConsump-1">
+                                        <IF value="DiffWalk,0">
+                                            <LeafNode class="0"/>
+                                        </IF>
+                                        <IF value="DiffWalk,1">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                                <IF value="HvyAlcoholConsump,0">
+                                    <Node attribute="HvyAlcoholConsump-0">
+                                        <IF value="Education,1">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                        <IF value="Education,0">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                        <IF value="Education,3">
+                                            <Node attribute="Education-3">
+                                                <IF value="CholCheck,1">
+                                                    <Node attribute="CholCheck-1">
+                                                        <IF value="PhysHlth,2">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                        <IF value="PhysHlth,3">
+                                                            <LeafNode class="0"/>
+                                                        </IF>
+                                                        <IF value="PhysHlth,0">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                        <IF value="PhysHlth,1">
+                                                            <Node attribute="PhysHlth-1">
+                                                                <IF value="Stroke,1">
+                                                                    <LeafNode class="0"/>
+                                                                </IF>
+                                                                <IF value="Stroke,0">
+                                                                    <Node attribute="Stroke-0">
+                                                                        <IF value="Sex,1">
+                                                                            <Node attribute="Sex-1">
+                                                                                <IF value="DiffWalk,0">
+                                                                                    <LeafNode class="1"/>
+                                                                                </IF>
+                                                                                <IF value="DiffWalk,1">
+                                                                                    <LeafNode class="0"/>
+                                                                                </IF>
+                                                                            </Node>
+                                                                        </IF>
+                                                                        <IF value="Sex,0">
+                                                                            <LeafNode class="0"/>
+                                                                        </IF>
+                                                                    </Node>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                                <IF value="CholCheck,0">
+                                                    <LeafNode class="0"/>
+                                                </IF>
+                                            </Node>
+                                        </IF>
+                                        <IF value="Education,2">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                            </Node>
+                        </IF>
+                        <IF value="BMI,1">
+                            <LeafNode class="1"/>
+                        </IF>
+                    </Node>
+                </IF>
+                <IF value="Age,3">
+                    <Node attribute="Age-3">
+                        <IF value="HvyAlcoholConsump,1">
+                            <LeafNode class="0"/>
+                        </IF>
+                        <IF value="HvyAlcoholConsump,0">
+                            <Node attribute="HvyAlcoholConsump-0">
+                                <IF value="Education,1">
+                                    <LeafNode class="1"/>
+                                </IF>
+                                <IF value="Education,0">
+                                    <LeafNode class="1"/>
+                                </IF>
+                                <IF value="Education,3">
+                                    <Node attribute="Education-3">
+                                        <IF value="Income,3">
+                                            <Node attribute="Income-3">
+                                                <IF value="MentHlth,0">
+                                                    <Node attribute="MentHlth-0">
+                                                        <IF value="PhysHlth,2">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                        <IF value="PhysHlth,3">
+                                                            <Node attribute="PhysHlth-3">
+                                                                <IF value="HighChol,0">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                                <IF value="HighChol,1">
+                                                                    <LeafNode class="0"/>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                        <IF value="PhysHlth,0">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                        <IF value="PhysHlth,1">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                                <IF value="MentHlth,1">
+                                                    <LeafNode class="1"/>
+                                                </IF>
+                                                <IF value="MentHlth,2">
+                                                    <LeafNode class="1"/>
+                                                </IF>
+                                                <IF value="MentHlth,3">
+                                                    <LeafNode class="1"/>
+                                                </IF>
+                                            </Node>
+                                        </IF>
+                                        <IF value="Income,1">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                        <IF value="Income,2">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                        <IF value="Income,0">
+                                            <Node attribute="Income-0">
+                                                <IF value="Veggies,0">
+                                                    <LeafNode class="1"/>
+                                                </IF>
+                                                <IF value="Veggies,1">
+                                                    <Node attribute="Veggies-1">
+                                                        <IF value="PhysActivity,1">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                        <IF value="PhysActivity,0">
+                                                            <LeafNode class="0"/>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                            </Node>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                                <IF value="Education,2">
+                                    <Node attribute="Education-2">
+                                        <IF value="DiffWalk,0">
+                                            <Node attribute="DiffWalk-0">
+                                                <IF value="MentHlth,0">
+                                                    <Node attribute="MentHlth-0">
+                                                        <IF value="Income,3">
+                                                            <Node attribute="Income-3">
+                                                                <IF value="NoDocbcCost,0">
+                                                                    <Node attribute="NoDocbcCost-0">
+                                                                        <IF value="HeartDiseaseorAttack,1">
+                                                                            <LeafNode class="0"/>
+                                                                        </IF>
+                                                                        <IF value="HeartDiseaseorAttack,0">
+                                                                            <Node attribute="HeartDiseaseorAttack-0">
+                                                                                <IF value="Fruits,1">
+                                                                                    <LeafNode class="0"/>
+                                                                                </IF>
+                                                                                <IF value="Fruits,0">
+                                                                                    <LeafNode class="1"/>
+                                                                                </IF>
+                                                                            </Node>
+                                                                        </IF>
+                                                                    </Node>
+                                                                </IF>
+                                                                <IF value="NoDocbcCost,1">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                        <IF value="Income,1">
+                                                            <LeafNode class="0"/>
+                                                        </IF>
+                                                        <IF value="Income,2">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                        <IF value="Income,0">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                                <IF value="MentHlth,1">
+                                                    <LeafNode class="0"/>
+                                                </IF>
+                                                <IF value="MentHlth,3">
+                                                    <LeafNode class="0"/>
+                                                </IF>
+                                            </Node>
+                                        </IF>
+                                        <IF value="DiffWalk,1">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                            </Node>
+                        </IF>
+                    </Node>
+                </IF>
+                <IF value="Age,0">
+                    <Node attribute="Age-0">
+                        <IF value="BMI,2">
+                            <LeafNode class="1"/>
+                        </IF>
+                        <IF value="BMI,0">
+                            <LeafNode class="0"/>
+                        </IF>
+                        <IF value="BMI,1">
+                            <LeafNode class="0"/>
+                        </IF>
+                    </Node>
+                </IF>
+            </Node>
+        </IF>
+        <IF value="GenHlth,2">
+            <Node attribute="GenHlth-2">
+                <IF value="HighBP,0">
+                    <Node attribute="HighBP-0">
+                        <IF value="HighChol,0">
+                            <Node attribute="HighChol-0">
+                                <IF value="Education,1">
+                                    <Node attribute="Education-1">
+                                        <IF value="DiffWalk,0">
+                                            <Node attribute="DiffWalk-0">
+                                                <IF value="Sex,1">
+                                                    <Node attribute="Sex-1">
+                                                        <IF value="Fruits,1">
+                                                            <Node attribute="Fruits-1">
+                                                                <IF value="PhysActivity,1">
+                                                                    <LeafNode class="0"/>
+                                                                </IF>
+                                                                <IF value="PhysActivity,0">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                        <IF value="Fruits,0">
+                                                            <LeafNode class="0"/>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                                <IF value="Sex,0">
+                                                    <LeafNode class="1"/>
+                                                </IF>
+                                            </Node>
+                                        </IF>
+                                        <IF value="DiffWalk,1">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                                <IF value="Education,0">
+                                    <LeafNode class="1"/>
+                                </IF>
+                                <IF value="Education,3">
+                                    <Node attribute="Education-3">
+                                        <IF value="BMI,2">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                        <IF value="BMI,0">
+                                            <Node attribute="BMI-0">
+                                                <IF value="CholCheck,1">
+                                                    <Node attribute="CholCheck-1">
+                                                        <IF value="DiffWalk,0">
+                                                            <LeafNode class="0"/>
+                                                        </IF>
+                                                        <IF value="DiffWalk,1">
+                                                            <Node attribute="DiffWalk-1">
+                                                                <IF value="Sex,1">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                                <IF value="Sex,0">
+                                                                    <Node attribute="Sex-0">
+                                                                        <IF value="PhysHlth,2">
+                                                                            <LeafNode class="0"/>
+                                                                        </IF>
+                                                                        <IF value="PhysHlth,3">
+                                                                            <LeafNode class="0"/>
+                                                                        </IF>
+                                                                        <IF value="PhysHlth,0">
+                                                                            <LeafNode class="1"/>
+                                                                        </IF>
+                                                                        <IF value="PhysHlth,1">
+                                                                            <LeafNode class="1"/>
+                                                                        </IF>
+                                                                    </Node>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                                <IF value="CholCheck,0">
+                                                    <LeafNode class="0"/>
+                                                </IF>
+                                            </Node>
+                                        </IF>
+                                        <IF value="BMI,1">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                                <IF value="Education,2">
+                                    <Node attribute="Education-2">
+                                        <IF value="Veggies,0">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                        <IF value="Veggies,1">
+                                            <LeafNode class="0"/>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                            </Node>
+                        </IF>
+                        <IF value="HighChol,1">
+                            <Node attribute="HighChol-1">
+                                <IF value="PhysHlth,2">
+                                    <LeafNode class="1"/>
+                                </IF>
+                                <IF value="PhysHlth,3">
+                                    <LeafNode class="1"/>
+                                </IF>
+                                <IF value="PhysHlth,0">
+                                    <Node attribute="PhysHlth-0">
+                                        <IF value="HeartDiseaseorAttack,1">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                        <IF value="HeartDiseaseorAttack,0">
+                                            <Node attribute="HeartDiseaseorAttack-0">
+                                                <IF value="MentHlth,0">
+                                                    <Node attribute="MentHlth-0">
+                                                        <IF value="Stroke,1">
+                                                            <Node attribute="Stroke-1">
+                                                                <IF value="Fruits,1">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                                <IF value="Fruits,0">
+                                                                    <LeafNode class="0"/>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                        <IF value="Stroke,0">
+                                                            <Node attribute="Stroke-0">
+                                                                <IF value="Income,3">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                                <IF value="Income,1">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                                <IF value="Income,2">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                                <IF value="Income,0">
+                                                                    <Node attribute="Income-0">
+                                                                        <IF value="DiffWalk,0">
+                                                                            <LeafNode class="1"/>
+                                                                        </IF>
+                                                                        <IF value="DiffWalk,1">
+                                                                            <Node attribute="DiffWalk-1">
+                                                                                <IF value="Sex,1">
+                                                                                    <LeafNode class="1"/>
+                                                                                </IF>
+                                                                                <IF value="Sex,0">
+                                                                                    <LeafNode class="0"/>
+                                                                                </IF>
+                                                                            </Node>
+                                                                        </IF>
+                                                                    </Node>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                                <IF value="MentHlth,1">
+                                                    <LeafNode class="1"/>
+                                                </IF>
+                                                <IF value="MentHlth,2">
+                                                    <LeafNode class="1"/>
+                                                </IF>
+                                                <IF value="MentHlth,3">
+                                                    <LeafNode class="1"/>
+                                                </IF>
+                                            </Node>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                                <IF value="PhysHlth,1">
+                                    <LeafNode class="1"/>
+                                </IF>
+                            </Node>
+                        </IF>
+                    </Node>
+                </IF>
+                <IF value="HighBP,1">
+                    <Node attribute="HighBP-1">
+                        <IF value="BMI,2">
+                            <LeafNode class="1"/>
+                        </IF>
+                        <IF value="BMI,3">
+                            <LeafNode class="0"/>
+                        </IF>
+                        <IF value="BMI,0">
+                            <Node attribute="BMI-0">
+                                <IF value="Stroke,1">
+                                    <LeafNode class="1"/>
+                                </IF>
+                                <IF value="Stroke,0">
+                                    <Node attribute="Stroke-0">
+                                        <IF value="DiffWalk,0">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                        <IF value="DiffWalk,1">
+                                            <Node attribute="DiffWalk-1">
+                                                <IF value="Income,3">
+                                                    <LeafNode class="1"/>
+                                                </IF>
+                                                <IF value="Income,1">
+                                                    <LeafNode class="1"/>
+                                                </IF>
+                                                <IF value="Income,2">
+                                                    <LeafNode class="1"/>
+                                                </IF>
+                                                <IF value="Income,0">
+                                                    <Node attribute="Income-0">
+                                                        <IF value="Veggies,0">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                        <IF value="Veggies,1">
+                                                            <Node attribute="Veggies-1">
+                                                                <IF value="HeartDiseaseorAttack,1">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                                <IF value="HeartDiseaseorAttack,0">
+                                                                    <Node attribute="HeartDiseaseorAttack-0">
+                                                                        <IF value="Sex,1">
+                                                                            <Node attribute="Sex-1">
+                                                                                <IF value="NoDocbcCost,0">
+                                                                                    <LeafNode class="0"/>
+                                                                                </IF>
+                                                                                <IF value="NoDocbcCost,1">
+                                                                                    <LeafNode class="1"/>
+                                                                                </IF>
+                                                                            </Node>
+                                                                        </IF>
+                                                                        <IF value="Sex,0">
+                                                                            <LeafNode class="1"/>
+                                                                        </IF>
+                                                                    </Node>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                            </Node>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                            </Node>
+                        </IF>
+                        <IF value="BMI,1">
+                            <Node attribute="BMI-1">
+                                <IF value="Education,1">
+                                    <LeafNode class="1"/>
+                                </IF>
+                                <IF value="Education,0">
+                                    <LeafNode class="1"/>
+                                </IF>
+                                <IF value="Education,3">
+                                    <LeafNode class="1"/>
+                                </IF>
+                                <IF value="Education,2">
+                                    <Node attribute="Education-2">
+                                        <IF value="HeartDiseaseorAttack,1">
+                                            <Node attribute="HeartDiseaseorAttack-1">
+                                                <IF value="PhysActivity,1">
+                                                    <Node attribute="PhysActivity-1">
+                                                        <IF value="DiffWalk,0">
+                                                            <LeafNode class="0"/>
+                                                        </IF>
+                                                        <IF value="DiffWalk,1">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                                <IF value="PhysActivity,0">
+                                                    <LeafNode class="1"/>
+                                                </IF>
+                                            </Node>
+                                        </IF>
+                                        <IF value="HeartDiseaseorAttack,0">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                            </Node>
+                        </IF>
+                    </Node>
+                </IF>
+            </Node>
+        </IF>
+        <IF value="GenHlth,3">
+            <Node attribute="GenHlth-3">
+                <IF value="HighChol,0">
+                    <Node attribute="HighChol-0">
+                        <IF value="Education,1">
+                            <LeafNode class="1"/>
+                        </IF>
+                        <IF value="Education,0">
+                            <LeafNode class="1"/>
+                        </IF>
+                        <IF value="Education,3">
+                            <Node attribute="Education-3">
+                                <IF value="Age,1">
+                                    <Node attribute="Age-1">
+                                        <IF value="DiffWalk,0">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                        <IF value="DiffWalk,1">
+                                            <LeafNode class="0"/>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                                <IF value="Age,2">
+                                    <LeafNode class="1"/>
+                                </IF>
+                                <IF value="Age,3">
+                                    <LeafNode class="1"/>
+                                </IF>
+                                <IF value="Age,0">
+                                    <LeafNode class="0"/>
+                                </IF>
+                            </Node>
+                        </IF>
+                        <IF value="Education,2">
+                            <Node attribute="Education-2">
+                                <IF value="PhysHlth,2">
+                                    <LeafNode class="1"/>
+                                </IF>
+                                <IF value="PhysHlth,3">
+                                    <Node attribute="PhysHlth-3">
+                                        <IF value="AnyHealthcare,0">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                        <IF value="AnyHealthcare,1">
+                                            <Node attribute="AnyHealthcare-1">
+                                                <IF value="Sex,1">
+                                                    <Node attribute="Sex-1">
+                                                        <IF value="Age,1">
+                                                            <LeafNode class="0"/>
+                                                        </IF>
+                                                        <IF value="Age,2">
+                                                            <Node attribute="Age-2">
+                                                                <IF value="Income,3">
+                                                                    <LeafNode class="0"/>
+                                                                </IF>
+                                                                <IF value="Income,1">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                                <IF value="Income,2">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                                <IF value="Income,0">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                        <IF value="Age,3">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                                <IF value="Sex,0">
+                                                    <Node attribute="Sex-0">
+                                                        <IF value="NoDocbcCost,0">
+                                                            <Node attribute="NoDocbcCost-0">
+                                                                <IF value="Income,3">
+                                                                    <LeafNode class="0"/>
+                                                                </IF>
+                                                                <IF value="Income,1">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                                <IF value="Income,2">
+                                                                    <LeafNode class="0"/>
+                                                                </IF>
+                                                                <IF value="Income,0">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                        <IF value="NoDocbcCost,1">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                            </Node>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                                <IF value="PhysHlth,0">
+                                    <LeafNode class="0"/>
+                                </IF>
+                                <IF value="PhysHlth,1">
+                                    <LeafNode class="1"/>
+                                </IF>
+                            </Node>
+                        </IF>
+                    </Node>
+                </IF>
+                <IF value="HighChol,1">
+                    <Node attribute="HighChol-1">
+                        <IF value="PhysHlth,2">
+                            <LeafNode class="1"/>
+                        </IF>
+                        <IF value="PhysHlth,3">
+                            <LeafNode class="1"/>
+                        </IF>
+                        <IF value="PhysHlth,0">
+                            <LeafNode class="1"/>
+                        </IF>
+                        <IF value="PhysHlth,1">
+                            <Node attribute="PhysHlth-1">
+                                <IF value="Income,3">
+                                    <LeafNode class="1"/>
+                                </IF>
+                                <IF value="Income,1">
+                                    <Node attribute="Income-1">
+                                        <IF value="HeartDiseaseorAttack,1">
+                                            <Node attribute="HeartDiseaseorAttack-1">
+                                                <IF value="Smoker,0">
+                                                    <LeafNode class="1"/>
+                                                </IF>
+                                                <IF value="Smoker,1">
+                                                    <Node attribute="Smoker-1">
+                                                        <IF value="BMI,0">
+                                                            <Node attribute="BMI-0">
+                                                                <IF value="Stroke,1">
+                                                                    <LeafNode class="0"/>
+                                                                </IF>
+                                                                <IF value="Stroke,0">
+                                                                    <LeafNode class="1"/>
+                                                                </IF>
+                                                            </Node>
+                                                        </IF>
+                                                        <IF value="BMI,1">
+                                                            <LeafNode class="1"/>
+                                                        </IF>
+                                                    </Node>
+                                                </IF>
+                                            </Node>
+                                        </IF>
+                                        <IF value="HeartDiseaseorAttack,0">
+                                            <LeafNode class="1"/>
+                                        </IF>
+                                    </Node>
+                                </IF>
+                                <IF value="Income,2">
+                                    <LeafNode class="1"/>
+                                </IF>
+                                <IF value="Income,0">
+                                    <LeafNode class="1"/>
+                                </IF>
+                            </Node>
+                        </IF>
+                    </Node>
+                </IF>
+            </Node>
+        </IF>
+    </Node>
+</DecisionTree>
